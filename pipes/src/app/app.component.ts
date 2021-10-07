@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name: string = '';
-  date: string = '';
+  name: string;
+  date: string;
+  amount: number;
 
   onNameChange(value: string) {
     this.name = value;
@@ -15,5 +16,9 @@ export class AppComponent {
 
   onDateChange(value: string) {
     this.date = value;
+  }
+
+  onAmountChange(value: string) {
+    this.amount = parseFloat(value);
   }
 }
