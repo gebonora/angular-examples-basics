@@ -13,11 +13,13 @@
         <input
           class="input"
           (input)="onChangeText($any($event.target).value)"
+          [disabled]="enteredText === randomText"
         />
       </div>
 
       <div *ngIf="enteredText === randomText" class="box has-text-centered">
         <h1 class="title">Success!</h1>
+        <p>Reload to try again</p>
       </div>
     </div>
   </div>
