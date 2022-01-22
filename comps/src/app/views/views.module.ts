@@ -3,12 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ViewsRoutingModule } from './views-routing.module';
 
-
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    ViewsRoutingModule
-  ]
+  imports: [CommonModule, ViewsRoutingModule],
 })
-export class ViewsModule { }
+export class ViewsModule {}
